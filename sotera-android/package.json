@@ -1,0 +1,32 @@
+{
+  "name": "sotera-android",
+  "version": "1.0.0",
+  "description": "SOTERA Android conversion of the responsive student tools directory.",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js",
+    "migrate": "node server/migrate.js",
+    "backup": "node server/backup.js",
+    "sync": "npx cap sync android",
+    "open:android": "npx cap open android",
+    "build:apk": "npx cap sync android && cd android && gradlew.bat assembleDebug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "8.6.2",
+    "@capacitor/core": "8.6.2",
+    "bcryptjs": "3.0.2",
+    "cookie-parser": "1.4.7",
+    "dotenv": "17.2.3",
+    "express": "5.1.0",
+    "helmet": "8.1.0",
+    "node-cron": "4.2.1",
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.2"
+  }
+}

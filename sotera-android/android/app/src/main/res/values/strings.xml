@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SOTERA</string>
+    <string name="title_activity_main">SOTERA</string>
+    <string name="package_name">com.sotera.app</string>
+    <string name="custom_url_scheme">com.sotera.app</string>
+</resources>

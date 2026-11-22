@@ -1,0 +1,183 @@
+/* =========================================================
+   SOTERA Design Tokens
+   Source of truth: "SOTERA App Branding Style Guide.png"
+   Primary #4F46E5 · Light Purple #8B5CF6 · Lavender #EDE9FE
+   Accent #F97316 · Light Orange #FED7AA · Text #0F172A · Muted #64748B
+   Typography: Poppins
+   ========================================================= */
+:root {
+  color-scheme: light;
+
+  --primary: #4f46e5;
+  --primary-600: #4338ca;
+  --primary-700: #3730a3;
+  --violet: #8b5cf6;
+  --violet-soft: #a78bfa;
+  --purple-ink: #2e1065;
+  --lavender: #ede9fe;
+  --lavender-soft: #f5f3ff;
+  --lavender-line: #ddd6fe;
+
+  --accent: #f97316;
+  --accent-soft: #fed7aa;
+  --accent-tint: #fff7ed;
+
+  --ink: #0f172a;
+  --ink-soft: #1e293b;
+  --muted: #64748b;
+  --muted-2: #94a3b8;
+
+  --bg: #ffffff;
+  --surface: #fafafe;
+  --surface-2: #f5f4fb;
+  --card: #ffffff;
+  --card-alt: #fbfaff;
+
+  --line: #e9e7f4;
+  --line-strong: #d8d5e8;
+  --line-soft: #f1f0f8;
+
+  --success: #16a34a;
+  --success-soft: #dcfce7;
+  --success-ink: #166534;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --danger-ink: #991b1b;
+  --warning: #d97706;
+  --warning-soft: #fef3c7;
+  --star: #f59e0b;
+
+  --grad-primary: linear-gradient(135deg, #4f46e5 0%, #6d3ff0 48%, #8b5cf6 100%);
+  --grad-primary-soft: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 55%, #fdf4ff 100%);
+  --grad-lavender: linear-gradient(160deg, #f5f3ff 0%, #ede9fe 100%);
+  --grad-accent: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  --grad-dark: linear-gradient(150deg, #1e1b4b 0%, #312e81 55%, #4c1d95 100%);
+
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 10px 30px rgba(79, 70, 229, 0.12);
+  --shadow-lg: 0 24px 60px rgba(46, 16, 101, 0.16);
+  --shadow-fab: 0 14px 30px rgba(79, 70, 229, 0.38);
+
+  --radius-xs: 8px;
+  --radius-sm: 10px;
+  --radius: 14px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-2xl: 32px;
+  --radius-pill: 999px;
+
+  --font: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-base: 13.5px;
+  --fs-md: 15px;
+  --fs-lg: 17px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 30px;
+
+  --pad-page: 18px;
+  --nav-h: 74px;
+  --sidebar-w: 268px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 220ms;
+
+  --icon-1: #4f46e5;
+  --icon-2: #8b5cf6;
+  --icon-3: #f97316;
+  --icon-4: #0ea5e9;
+  --icon-5: #10b981;
+  --icon-6: #ec4899;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --ink: #f1f5f9;
+  --ink-soft: #e2e8f0;
+  --muted: #a3aec4;
+  --muted-2: #7c8aa5;
+
+  --bg: #090e1c;
+  --surface: #0e1526;
+  --surface-2: #151d33;
+  --card: #111a2e;
+  --card-alt: #131d34;
+
+  --line: #243049;
+  --line-strong: #32405d;
+  --line-soft: #1b2438;
+
+  --lavender: #251f49;
+  --lavender-soft: #1a1735;
+  --lavender-line: #3b3270;
+  --primary: #7c6cf6;
+  --primary-600: #6d5df0;
+  --primary-700: #5b4ce0;
+  --violet: #a78bfa;
+  --accent: #fb923c;
+  --accent-soft: #7c4515;
+  --accent-tint: #241708;
+
+  --success-soft: #0d2b1d;
+  --success-ink: #6ee7a8;
+  --danger-soft: #2d1216;
+  --danger-ink: #fda4af;
+  --warning-soft: #2b210b;
+
+  --grad-primary-soft: linear-gradient(135deg, #151c36 0%, #1a1735 55%, #211532 100%);
+  --grad-lavender: linear-gradient(160deg, #171430 0%, #1d1940 100%);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.6);
+  --shadow-fab: 0 14px 30px rgba(79, 70, 229, 0.45);
+}
+
+[data-oled="true"][data-theme="dark"] {
+  --bg: #000000;
+  --surface: #000000;
+  --card: #06060c;
+  --card-alt: #08080f;
+  --surface-2: #0b0b14;
+  --line: #1b1b2b;
+  --line-soft: #12121e;
+}
+
+[data-contrast="true"] {
+  --muted: #475569;
+  --line: #c7c2dd;
+  --line-strong: #a9a2c6;
+}
+[data-theme="dark"][data-contrast="true"] {
+  --muted: #cbd5e1;
+  --line: #4a5878;
+}
+
+[data-motion="reduced"] *,
+[data-motion="reduced"] *::before,
+[data-motion="reduced"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (min-width: 720px) {
+  :root {
+    --pad-page: 28px;
+    --fs-base: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  :root {
+    --pad-page: 36px;
+    --fs-2xl: 26px;
+    --fs-3xl: 34px;
+  }
+}

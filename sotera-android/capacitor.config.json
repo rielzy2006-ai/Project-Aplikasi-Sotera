@@ -1,0 +1,9 @@
+{
+  "appId": "com.sotera.app",
+  "appName": "SOTERA",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#4F46E5"
+  }
+}
